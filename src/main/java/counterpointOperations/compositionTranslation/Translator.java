@@ -1,0 +1,17 @@
+package counterpointOperations.compositionTranslation;
+
+import composition.Composition;
+
+import counterpointOperations.counterpointComposition.CounterpointComposition;
+
+
+public class Translator {
+
+	public static CounterpointComposition generateCounterpointCompositionFromComposition(Composition aCompositionDTO){
+		return CompositionToCounterpointCompositionTranslator.generateCounterpointCompositionFromComposition(aCompositionDTO);
+	}
+	
+	public static Composition generateCompositionDTOFromCounterpointComposition(CounterpointComposition counterpointComposition){
+		return CounterpointCompositionToCompositionTranslator.generateCompositionDTOFromCounterpointComposition(counterpointComposition);
+	}
+}
